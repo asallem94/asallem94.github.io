@@ -1,20 +1,21 @@
 class GameControls {
-  constructor(canvasElement, rightPressed, leftPressed, guardianShield){
+  constructor(canvasElement, guardianShield){
     this.canvasElement = canvasElement;
-    this.rightPressed = rightPressed;
-    this.leftPressed = leftPressed;
+    // this.canWidth = canWidth;
+    this.rightPressed = false;
+    this.leftPressed = false;
     this.guardianShield = guardianShield;
 
-
+    // debugger
     document.getElementById('volume').onclick = this.handleSound;
 
     document.addEventListener("mousemove", this.mouseMoveHandler.bind(this), false);
 
-    document.addEventListener("keydown", this.keyDownHandler, false);
-    document.addEventListener("keyup", this.keyUpHandler, false);
+    document.addEventListener("keydown", this.keyDownHandler.bind(this), false);
+    document.addEventListener("keyup", this.keyUpHandler.bind(this), false);
 
-    document.addEventListener("keydown", guardianShield.keyDownHandler, false);
-    document.addEventListener("keyup", this.keyUpHandler, false);
+    // document.addEventListener("keydown", guardianShield.moveShield.bind(this.rightPressed, this.leftPressed), false);
+    // document.addEventListener("keyup", this.keyUpHandler, false);
   }
 
   handleSound(){
@@ -28,7 +29,7 @@ class GameControls {
   }
 
   keyDownHandler(e) {
-    // debugger
+    e.preventDefault();
     if(e.keyCode == 39) {
       this.rightPressed = true;
     }
@@ -38,18 +39,35 @@ class GameControls {
   }
 
   keyUpHandler(e) {
+    e.preventDefault();
     if(e.keyCode == 39) {
       this.rightPressed = false;
     }
     else if(e.keyCode == 37) {
       this.leftPressed = false;
     }
+    console.log(this.rightPressed)
   }
 
   mouseMoveHandler(e) {
     let relativeX = e.clientX - this.canvasElement.offsetLeft;
     if(relativeX > 0 && relativeX < this.canvasElement.width) {
       this.guardianShield.paddleX = relativeX - this.guardianShield.paddleWidth/2;
+    }
+  }
+
+  moveShield(){
+    // debugger
+    const sensitivity = 7;
+
+    // console.log(this.paddleX < this.canWidth-this.paddleWidth);
+    // console.log(rightPressed);
+
+    if(this.rightPressed && this.guardianShield.paddleX < this.canWidth-this.guardianShield.paddleWidth) {
+      this.guardianShield.paddleX += sensitivity;
+    }
+    if(this.leftPressed && this.guardianShield.paddleX > 0) {
+      this.guardianShield.paddleX -= sensitivity;
     }
   }
 

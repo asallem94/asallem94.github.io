@@ -20,10 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // create guardianShield
   const guardianShield = new Shield(ctx, canvasElement, canWidth, canHeight);
 
-  let rightPressed;
-  let leftPressed;
-
-  const controls = new GameControlls(canvasElement, rightPressed, leftPressed, guardianShield);
+  const controls = new GameControlls(canvasElement, guardianShield, canWidth);
 
   const cannons = [];
   let clusterAngle  = 0.3 * Math.random() + 0.3;
@@ -58,7 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
     wave.drawWave(guardianShield, myScoring);
 
     if (openedModal) {
-      myScoring.displayModal()
+      myScoring.displayModal();
     } else {
       myScoring.drawScore();
       myScoring.drawLives();

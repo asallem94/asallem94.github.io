@@ -53,14 +53,14 @@ class Cannon {
     this.ctx.closePath();
 
     this.ctx.beginPath();
-    this.ctx.arc(this.x, this.y-3, this.cannonRadius-3, 0, Math.PI*2);
+    this.ctx.arc(this.x, this.y-3, this.cannonRadius, 0, Math.PI*2);
     this.ctx.fillStyle = "yellow";
     this.ctx.lineWidth = 5;
     this.ctx.fill();
     this.ctx.closePath();
 
     this.ctx.beginPath();
-    this.ctx.arc(this.x +5 * Math.random(), this.y + (4 * Math.random()), this.cannonRadius-14, 0, Math.PI*2);
+    this.ctx.arc(this.x +5 * Math.random(), this.y + (4 * Math.random()), this.cannonRadius, 0, Math.PI*2);
     this.ctx.fillStyle = "red";
     this.ctx.lineWidth = 2;
     this.ctx.fill();
