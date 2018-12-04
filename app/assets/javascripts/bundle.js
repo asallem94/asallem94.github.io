@@ -245,8 +245,6 @@ class GameControls {
     document.addEventListener("keydown", this.keyDownHandler.bind(this), false);
     document.addEventListener("keyup", this.keyUpHandler.bind(this), false);
 
-    // document.addEventListener("keydown", guardianShield.moveShield.bind(this.rightPressed, this.leftPressed), false);
-    // document.addEventListener("keyup", this.keyUpHandler, false);
   }
 
   handleSound(){
@@ -277,7 +275,6 @@ class GameControls {
     else if(e.keyCode == 37) {
       this.leftPressed = false;
     }
-    console.log(this.rightPressed)
   }
 
   mouseMoveHandler(e) {
@@ -290,9 +287,6 @@ class GameControls {
   moveShield(){
     // debugger
     const sensitivity = 7;
-
-    // console.log(this.paddleX < this.canWidth-this.paddleWidth);
-    // console.log(rightPressed);
 
     if(this.rightPressed && this.guardianShield.paddleX < this.canWidth-this.guardianShield.paddleWidth) {
       this.guardianShield.paddleX += sensitivity;

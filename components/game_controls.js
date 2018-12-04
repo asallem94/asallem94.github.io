@@ -44,7 +44,6 @@ class GameControls {
     else if(e.keyCode == 37) {
       this.leftPressed = false;
     }
-    console.log(this.rightPressed)
   }
 
   mouseMoveHandler(e) {
@@ -57,9 +56,6 @@ class GameControls {
   moveShield(){
     // debugger
     const sensitivity = 7;
-
-    // console.log(this.paddleX < this.canWidth-this.paddleWidth);
-    // console.log(rightPressed);
 
     if(this.rightPressed && this.guardianShield.paddleX < this.canWidth-this.guardianShield.paddleWidth) {
       this.guardianShield.paddleX += sensitivity;
