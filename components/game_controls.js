@@ -14,8 +14,6 @@ class GameControls {
     document.addEventListener("keydown", this.keyDownHandler.bind(this), false);
     document.addEventListener("keyup", this.keyUpHandler.bind(this), false);
 
-    // document.addEventListener("keydown", guardianShield.moveShield.bind(this.rightPressed, this.leftPressed), false);
-    // document.addEventListener("keyup", this.keyUpHandler, false);
   }
 
   handleSound(){
