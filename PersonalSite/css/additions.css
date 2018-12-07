@@ -1,0 +1,61 @@
+h5 {
+  font-size: 18px;
+  color: white;
+}
+
+.row {
+  display: flex;
+  justify-content: flex-start;
+  flex-flow: row wrap;
+}
+
+.image-icon {
+  height: 75px;
+  object-fit: contain;
+  margin: 10px auto;
+}
+
+.skill-item {
+  position:relative;
+  width: 200px;
+  margin: 10px;
+  border-radius: 10px;
+  /* background-color: rgba(230, 215, 200, 0.2); */
+  padding:  30px 5px;
+  box-sizing: border-box;
+}
+
+/* .skill-item > hr{
+  display: none;
+} */
+
+.skill-item:hover {
+  background-color: rgba(130, 175, 250, 0.4);
+}
+.skill-item:hover > h5{
+  font-size: 24px;
+  display: block;
+}
+.skill-item:hover > hr{
+  width: 150px;
+  display: block;
+}
+
+.portfolio-item-text {
+  width:60%;
+}
+
+.img-responsive {
+  width: 300px;
+  height:300px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.img {
+  width: 250px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 25px;
+
+}
