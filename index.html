@@ -82,10 +82,11 @@
       <h2>About Me</h2>
       <hr>
     </div>
-    <div class="row">
-      <img src="img/about.jpg" class="img-responsive" alt="">
+    <div class="row unwraped-row">
       <div class="about-text">
-        <p>I am an enthusiastic software developer, I have  I have a background in structural civil engineering.</p>
+        <img src="img/about.jpg" class="img-responsive profile-img" alt="">
+        <p>I am an enthusiastic software developer.  I have worked on projects focusing on web development and IOS mobile development. I have bachelors of engineering degree in structural civil engineering. After I graduated I worked in construction at Turner Consrtuction.</p>
+        <p>What I learned the most from this experince was how valuable programing and softeare engineering is because of the potential it has to increase collaborative work and efficency in construction processices</p>
         <a href="#portfolio" class="btn btn-primary btn-lg page-scroll">My Portfolio</a>
       </div>
     </div>
@@ -139,11 +140,11 @@
         <hr>
         <h5>Redux</h5>
       </div>
-      <div class="skill-item">
+      <!-- <div class="skill-item">
         <img src="img/skills/python.png" class="image-icon">
         <hr>
         <h5>Python</h5>
-      </div>
+      </div> -->
       <div class="skill-item">
         <img src="img/skills/postgresql.png" class="image-icon">
         <hr>
@@ -262,14 +263,12 @@
       <div>
         <form name="sentMessage" id="contactForm" novalidate>
           <div class="row">
-            <div class="col-md-6">
-              <div class="form-group">
+            <div class="gen-contact">
+              <div class="form-group form-group-col">
                 <input type="text" id="name" class="form-control" placeholder="Name" required="required">
                 <p class="help-block text-danger"></p>
               </div>
-            </div>
-            <div class="col-md-6">
-              <div class="form-group">
+              <div class="form-group form-group-col">
                 <input type="email" id="email" class="form-control" placeholder="Email" required="required">
                 <p class="help-block text-danger"></p>
               </div>
