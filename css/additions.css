@@ -74,3 +74,12 @@ h5 {
 .form-group-col {
   width: 45%;
 }
+
+.resume-btn {
+  background-color: rgba(130, 175, 250, 1);
+  width: max-content;
+  height: max-content;
+  margin: auto;
+  box-sizing: border-box;
+  /* align-self: center; */
+}
