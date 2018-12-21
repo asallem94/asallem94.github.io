@@ -32,8 +32,10 @@ devoloping a passion and understanding of the value of software engineering.
 * Google Maps API
 
 # Projects
-* Meet-in: Meetup Clone
+* Meet-in: Meetup Inspired Web Application
+  [LIVE](http://meet-in.herokuapp.com/) | [REPO](https://github.com/asallem94/Meetin)
 * Cannon Guardian: interactive web game
-* Trails: Ruby on Rails Replica
+  [LIVE](https://asallem94.github.io/Cannon-Guardian/cannon_guardian) | [REPO](https://github.com/asallem94/Cannon-Guardian)
 * IOS Event Management Application
 * Effects of Overweight Vehicles on New York State
+  (https://trid.trb.org/view/1375435)
