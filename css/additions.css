@@ -86,3 +86,8 @@ h5 {
   box-sizing: border-box;
   /* align-self: center; */
 }
+
+.portfolio-title {
+  display: flex;
+  justify-content: space-between;
+}
