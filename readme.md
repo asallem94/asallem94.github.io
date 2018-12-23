@@ -2,7 +2,7 @@ Hello I am Sallem Ahmed
 
 Check out my PersonSite at (https://asallem94.github.io/)
 
-#Bio
+# Bio
 I am an enthusiastic software developer.  I have worked on projects
 focusing on web development and IOS mobile development. I have
 bachelors of engineering degree in structural civil engineering. In my
@@ -10,7 +10,7 @@ experience, I have focused on intensive programatic solutions to solve
 construction and civil engineering problems, which resulted in me
 devoloping a passion and understanding of the value of software engineering.
 
-#Languages
+# Languages
 * JavaScript
 * Ruby
 * SQL
