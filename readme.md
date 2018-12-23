@@ -30,6 +30,7 @@ devoloping a passion and understanding of the value of software engineering.
 * Rails Action Cables
 * Ruby on Rails
 * Google Maps API
+* Amazon Web Services
 
 # Projects
 * Meet-in: Meetup Inspired Web Application
