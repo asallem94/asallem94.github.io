@@ -129,10 +129,6 @@ hr {
 	width: 100%
 }
 
-.navbar .navbar-nav {
-	display: flex;
-}
-
 .navbar .navbar-collapse {
 	text-align: center;
 }
