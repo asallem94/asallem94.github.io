@@ -5,7 +5,7 @@ h5 {
 
 .img-responsive {
   width: 300px;
-  height:300px;
+  height: 300px;
   object-fit: cover;
   border-radius: 50%;
 }
@@ -15,6 +15,7 @@ h5 {
   margin: 20px;
 
 }
+
 .row {
   display: flex;
   justify-content: flex-start;
@@ -28,13 +29,21 @@ h5 {
 }
 
 .skill-item {
-  position:relative;
-  width: 200px;
+  position: relative;
+  min-width: 150px;
+  max-width: 200px;
+  flex-grow: 1;
+  flex-basis: 0;
   margin: 10px;
   border-radius: 10px;
   /* background-color: rgba(230, 215, 200, 0.2); */
-  padding:  30px 5px;
+  padding: 30px 5px;
   box-sizing: border-box;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -ms-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
 }
 
 /* .skill-item > hr{
@@ -43,18 +52,25 @@ h5 {
 
 .skill-item:hover {
   background-color: rgba(130, 175, 250, 0.4);
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2);
 }
-.skill-item:hover > h5{
-  font-size: 24px;
+
+.skill-item:hover>h5 {
+  font-size: 20px;
   display: block;
 }
-.skill-item:hover > hr{
+
+.skill-item:hover>hr {
   width: 150px;
   display: block;
 }
 
 .portfolio-item-text {
-  width:60%;
+  width: 60%;
 }
 
 .img {
@@ -63,24 +79,28 @@ h5 {
   object-fit: cover;
   border-radius: 25px;
 }
+
 .img-contain {
   width: 300px;
   height: 250px;
   object-fit: contain;
   border-radius: 25px;
 }
+
 .img-box {
   width: 300px;
   height: 300px;
   object-fit: cover;
   border-radius: 25px;
 }
+
 .img-wide {
   width: 300px;
   height: 125px;
   object-fit: cover;
   border-radius: 25px;
 }
+
 .img-mobile {
   width: 150px;
   height: 300px;
@@ -88,7 +108,8 @@ h5 {
   border-radius: 25px;
 
 }
-.collapse{
+
+.collapse {
   margin: auto;
 }
 
@@ -121,7 +142,7 @@ h5 {
   justify-content: center;
 }
 
-.multi-image{
+.multi-image {
   display: flex;
   flex-direction: column;
   align-items: center;
